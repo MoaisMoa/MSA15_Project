@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 public class Post {
-    private Integer no;
+    private int no;
     private String id;
     private String title;
     private String writer;
