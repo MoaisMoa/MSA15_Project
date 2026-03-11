@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.moa.project.mapper.PostMapper">
+
+	<resultMap id="postResultMap" type="Post">
+		<id property="no" column="no" />
+		<result property="id" column="id" />
+		<result property="title" column="title" />
+		<result property="writer" column="writer" />
+		<result property="content" column="content" />
+		<result property="createdAt" column="created_at" />
+		<result property="updatedAt" column="updated_at" />
+	</resultMap>
+
+	<select id="list" resultMap="postResultMap">
+		SELECT
+			no,
+			id,
+			title,
+			writer,
+			content,
+			created_at,
+			updated_at
+		FROM post
+		ORDER BY no DESC
+	</select>
+
+	<select id="select" parameterType="int" resultMap="postResultMap">
+		SELECT
+			no,
+			id,
+			title,
+			writer,
+			content,
+			created_at,
+			updated_at
+		FROM post
+		WHERE no = #{no}
+	</select>
+
+	<insert id="insert" parameterType="Post">
+		INSERT INTO post (
+			id,
+			title,
+			writer,
+			content
+		) VALUES (
+			#{id},
+			#{title},
+			#{writer},
+			#{content}
+		)
+	</insert>
+
+	<update id="update" parameterType="Post">
+		UPDATE post
+		SET
+			title = #{title},
+			writer = #{writer},
+			content = #{content},
+			updated_at = CURRENT_TIMESTAMP
+		WHERE no = #{no}
+	</update>
+
+	<delete id="delete" parameterType="int">
+		DELETE FROM post
+		WHERE no = #{no}
+	</delete>
+
+</mapper>

@@ -1,0 +1,49 @@
+body { 
+    font-family: "Malgun Gothic", sans-serif; 
+    margin: 28px;
+ }
+ 
+.card { 
+    max-width: 760px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+.field { 
+    margin-bottom: 12px;
+ }
+.field label {
+    display: block; 
+    margin-bottom: 6px; 
+    font-weight: 700; 
+}
+
+.field input, .field textarea { 
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.actions {
+    margin-top: 14px; 
+    display: flex; 
+    gap: 8px; 
+}
+
+.btn { 
+    padding: 8px 12px; 
+    border: none; 
+    border-radius: 6px; 
+    color: #fff; 
+    cursor: pointer; 
+    text-decoration: none;
+ }
+
+.btn-save { 
+    background: #198754;
+ }
+
+.btn-list {
+    background: #6c757d;
+ }

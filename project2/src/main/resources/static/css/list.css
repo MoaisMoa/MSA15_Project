@@ -1,0 +1,39 @@
+body {
+    font-family: "Malgun Gothic", sans-serif;
+    margin: 28px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #f7f7f8;
+}
+
+.top { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 16px; 
+}
+
+.btn { 
+    display: inline-block; 
+    padding: 8px 12px; 
+    text-decoration: none; 
+    border-radius: 6px; 
+    background: #0d6efd; 
+    color: #fff; 
+}
+
+.muted { 
+    color: #666; 
+}

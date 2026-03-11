@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjectApplication<project>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.moa.project.ProjectApplication",
+            "projectName": "project",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Project2Application<project2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.moa.project2.Project2Application",
+            "projectName": "project2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
